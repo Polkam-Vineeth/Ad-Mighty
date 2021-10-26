@@ -1,1 +1,7 @@
 %h1 Hello
+
+- @articles.each do |article|
+  = link_to article do 
+    %h2= article.title
+
+= link_to 'Create New Ad', new_article_path
